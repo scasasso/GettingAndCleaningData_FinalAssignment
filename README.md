@@ -40,16 +40,16 @@ The analysis proceeds as follows:
 
 4. for the "train" set, the "X_train.txt", the "y_train.txt" and the "subject_train.txt" files are read and imported as data.frames. The 3 data.frames are collapsed to one data.frame called ```train``` by using the cbind function;
 
-5. the same operation as in 4 is repeated for the "test" dataset;
+5. the same operation as in 4 is repeated for the ```test``` dataset;
 
 6. the ```train``` and ```test``` data.frame are merged using rbind into a single dataset called ```merged```;
 
-7. the activity name is added to the ```merged``` data.frame using the ```merge``` function; 
+7. the activity name is added to the ```merged``` data.frame using the merge function; 
 
-8. the ```merged``` data.frame is pruned by retaining only the variables **subjectId***, ***activityName*** and all the features which contain the expressions "mean" and "std" in the description; 
+8. the ```merged``` data.frame is pruned by retaining only the variables subjectId, activityName and all the features which contain the expressions "mean" and "std" in the description; 
 
-9. a _molten_ (or _narrow_) data.frame (called **molten**) is created from the merged data.frame using subjectId and activityName as id.vars; 
+9. a _molten_ (or _narrow_) data.frame (called ```molten```) is created from the merged data.frame using subjectId and activityName as id.vars; 
 
-10. the final aggregation to create the output dataset is done using the ```dcast``` function of the plyr package, specifying ```fun.aggregate = mean```.
+10. the final aggregation to create the output dataset (called ```out_df```) is done using the dcast function of the plyr package, specifying ```fun.aggregate = mean```.
 
 
