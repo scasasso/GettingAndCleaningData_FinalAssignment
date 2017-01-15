@@ -47,6 +47,6 @@ The analysis proceeds as follows:
 
 8. a _molten_ (or _narrow_) data.frame (called ```molten```) is created from the merged data.frame using subjectId and activityName as id.vars; 
 
-9. the final aggregation to create the output dataset (called ```out_df```) is done using the dcast function of the plyr package, specifying ```fun.aggregate = mean```.
+9. the final aggregation to create the output dataset (called ```out_df```) is done using the dcast function of the reshape2 package, specifying ```fun.aggregate = mean```.
 
 
