@@ -7,7 +7,7 @@ This README describes the content of the repository. It contains the files to ru
 The repository contains the following files:
 - ```run_analysis.R```: this is the script which performs the analysis (details are given below)
 - ```Codebook.md```: this file contains the description of the variables used in the analysis
-- ```summary_df.csv```: it's the output tidy dataset in csv format
+- ```summary_df.txt```: it's the output tidy dataset
 - ``` README.md```: this file
 
 ## How to run the analysis
@@ -16,7 +16,7 @@ In order to run the analysis you need the **reshape2** package. If you don't hav
 install.packages("reshape2",dependencies = TRUE)
 ```
 
-To reproduce the result of ```summary_df.csv``` one has to run the following command in an R session:
+To reproduce the result of ```summary_df.txt``` one has to run the following command in an R session:
 ```
 source('run_analysis.R')
 ```

@@ -59,5 +59,5 @@ out_df <- dcast(molten,subjectId + activityName ~ ...,mean)
 # Write the output to a file
 cat("\nWriting output data.frame...")
 if (!dir.exists("./output")) dir.create("./output")
-write.csv2(x = out_df,file = "./output/summary_df.csv",row.names = F)
-if (file.exists("./output/summary_df.csv")) cat("\nOutput written to:\n  ./output/summary_df.csv")
+write.table(out_df,"./output/summary_df.txt",row.names = F)
+if (file.exists("./output/summary_df.txt")) cat("\nOutput written to:\n  ./output/summary_df.txt")

@@ -1,5 +1,5 @@
 # Codebook
-This codebook summarises the variables of the ```summary_df.csv``` dataset.
+This codebook summarises the variables of the ```summary_df.txt``` dataset.
 The dataset summarises the mean value for several measurements taken using accelerometers and gyroscopes. 
 
 For the details about the design of the study, the definition of the measurement variables and the time windows of the measurements, please refer to the website:
