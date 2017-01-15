@@ -2,9 +2,11 @@ This codebook summarises the variables of the ```summary_df.csv``` dataset.
 The dataset summarises the mean value for several measurements taken using accelerometers and gyroscopes. 
 
 For the details about the design of the study, the definition of the measurement variables and the time windows of the measurements, please refer to the website:
+
 <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>
 
 In particular, a detail discussion about naming convention of the variables can be found in the file "features_info.txt" in this archive:
+
 <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
 
 Among the 561 variables of the original datasets, only the measurements related to mean and standard deviation are considered in the study.
@@ -17,6 +19,7 @@ Among the 561 variables of the original datasets, only the measurements related 
 
 ## Measurement variables
 The measurements from accelerometer and gyroscope related to mean and standard deviation. See this website for the details of the definition:
+
 <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>
 
 - ``` tBodyAcc-mean()-X ``` 
